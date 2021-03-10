@@ -3,19 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66838835252F6450000D5FAC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66838834252F6450000D5FAC /* API.swift */; };
+		66838838252F651B000D5FAC /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66838837252F651B000D5FAC /* Network.swift */; };
+		6683883B252F6B64000D5FAC /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6683883A252F6B64000D5FAC /* SDWebImage */; };
+		66B420EA255353DE00C10421 /* Login.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 66B420E9255353DE00C10421 /* Login.graphql */; };
+		66B420ED255358BC00C10421 /* LaunchDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 66B420EC255358BC00C10421 /* LaunchDetails.graphql */; };
+		66B420EF25535D0600C10421 /* TokenAddingInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B420EE25535D0600C10421 /* TokenAddingInterceptor.swift */; };
+		66B420F225535DE300C10421 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 66B420F125535DE300C10421 /* KeychainSwift */; };
+		66B420F425535E2200C10421 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B420F325535E2200C10421 /* LoginViewController.swift */; };
+		66B420F62553616D00C10421 /* NetworkInterceptorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B420F52553616D00C10421 /* NetworkInterceptorProvider.swift */; };
+		66B420F8255361D400C10421 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B420F7255361D400C10421 /* UIViewController+Alert.swift */; };
+		66B420FA2553624C00C10421 /* BookTrip.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 66B420F92553624C00C10421 /* BookTrip.graphql */; };
+		66B420FC255362BE00C10421 /* CancelTrip.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 66B420FB255362BE00C10421 /* CancelTrip.graphql */; };
 		66DFDFE8252F57C100C2BE6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DFDFE7252F57C100C2BE6C /* AppDelegate.swift */; };
 		66DFDFEA252F57C100C2BE6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DFDFE9252F57C100C2BE6C /* SceneDelegate.swift */; };
-		66DFDFEC252F57C100C2BE6C /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DFDFEB252F57C100C2BE6C /* MasterViewController.swift */; };
+		66DFDFEC252F57C100C2BE6C /* LaunchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DFDFEB252F57C100C2BE6C /* LaunchesViewController.swift */; };
 		66DFDFEE252F57C100C2BE6C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DFDFED252F57C100C2BE6C /* DetailViewController.swift */; };
 		66DFDFF1252F57C100C2BE6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66DFDFEF252F57C100C2BE6C /* Main.storyboard */; };
 		66DFDFF3252F57C700C2BE6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66DFDFF2252F57C700C2BE6C /* Assets.xcassets */; };
 		66DFDFF6252F57C700C2BE6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66DFDFF4252F57C700C2BE6C /* LaunchScreen.storyboard */; };
 		66DFE001252F57C700C2BE6C /* RocketReserverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DFE000252F57C700C2BE6C /* RocketReserverTests.swift */; };
 		66DFE00C252F57C700C2BE6C /* RocketReserverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DFE00B252F57C700C2BE6C /* RocketReserverUITests.swift */; };
+		66DFE01B252F597500C2BE6C /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 66DFE01A252F597500C2BE6C /* Apollo */; };
+		66DFE01D252F597500C2BE6C /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 66DFE01C252F597500C2BE6C /* ApolloWebSocket */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +50,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		660AB876252F617B00BABC36 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		660AB878252F627700BABC36 /* LaunchList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchList.graphql; sourceTree = "<group>"; };
+		66838834252F6450000D5FAC /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		66838837252F651B000D5FAC /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		66B420E9255353DE00C10421 /* Login.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Login.graphql; sourceTree = "<group>"; };
+		66B420EC255358BC00C10421 /* LaunchDetails.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchDetails.graphql; sourceTree = "<group>"; };
+		66B420EE25535D0600C10421 /* TokenAddingInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenAddingInterceptor.swift; sourceTree = "<group>"; };
+		66B420F325535E2200C10421 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		66B420F52553616D00C10421 /* NetworkInterceptorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptorProvider.swift; sourceTree = "<group>"; };
+		66B420F7255361D400C10421 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		66B420F92553624C00C10421 /* BookTrip.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = BookTrip.graphql; sourceTree = "<group>"; };
+		66B420FB255362BE00C10421 /* CancelTrip.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = CancelTrip.graphql; sourceTree = "<group>"; };
 		66DFDFE4252F57C100C2BE6C /* RocketReserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketReserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DFDFE7252F57C100C2BE6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66DFDFE9252F57C100C2BE6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		66DFDFEB252F57C100C2BE6C /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		66DFDFEB252F57C100C2BE6C /* LaunchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewController.swift; sourceTree = "<group>"; };
 		66DFDFED252F57C100C2BE6C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		66DFDFF0252F57C100C2BE6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66DFDFF2252F57C700C2BE6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +84,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6683883B252F6B64000D5FAC /* SDWebImage in Frameworks */,
+				66DFE01B252F597500C2BE6C /* Apollo in Frameworks */,
+				66B420F225535DE300C10421 /* KeychainSwift in Frameworks */,
+				66DFE01D252F597500C2BE6C /* ApolloWebSocket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +108,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		664FEC282554BEF400D11A07 /* queries */ = {
+			isa = PBXGroup;
+			children = (
+				66B420EC255358BC00C10421 /* LaunchDetails.graphql */,
+				660AB878252F627700BABC36 /* LaunchList.graphql */,
+			);
+			name = queries;
+			sourceTree = "<group>";
+		};
+		664FEC292554BF2800D11A07 /* mutations */ = {
+			isa = PBXGroup;
+			children = (
+				66B420E9255353DE00C10421 /* Login.graphql */,
+				66B420FB255362BE00C10421 /* CancelTrip.graphql */,
+				66B420F92553624C00C10421 /* BookTrip.graphql */,
+			);
+			name = mutations;
+			sourceTree = "<group>";
+		};
+		664FEC2A2554BF4700D11A07 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				66DFDFEB252F57C100C2BE6C /* LaunchesViewController.swift */,
+				66DFDFED252F57C100C2BE6C /* DetailViewController.swift */,
+				66B420F325535E2200C10421 /* LoginViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		664FEC2B2554BF5F00D11A07 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				66B420EE25535D0600C10421 /* TokenAddingInterceptor.swift */,
+				66B420F52553616D00C10421 /* NetworkInterceptorProvider.swift */,
+				66838837252F651B000D5FAC /* Network.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		664FEC2C2554BF6700D11A07 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				66B420F7255361D400C10421 /* UIViewController+Alert.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		664FEC2D2554BF7B00D11A07 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				66DFDFEF252F57C100C2BE6C /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		66DFDFDB252F57C100C2BE6C = {
 			isa = PBXGroup;
 			children = (
@@ -103,12 +188,17 @@
 			children = (
 				66DFDFE7252F57C100C2BE6C /* AppDelegate.swift */,
 				66DFDFE9252F57C100C2BE6C /* SceneDelegate.swift */,
-				66DFDFEB252F57C100C2BE6C /* MasterViewController.swift */,
-				66DFDFED252F57C100C2BE6C /* DetailViewController.swift */,
-				66DFDFEF252F57C100C2BE6C /* Main.storyboard */,
-				66DFDFF2252F57C700C2BE6C /* Assets.xcassets */,
 				66DFDFF4252F57C700C2BE6C /* LaunchScreen.storyboard */,
+				66838834252F6450000D5FAC /* API.swift */,
+				664FEC292554BF2800D11A07 /* mutations */,
+				664FEC282554BEF400D11A07 /* queries */,
+				664FEC2A2554BF4700D11A07 /* ViewControllers */,
+				664FEC2B2554BF5F00D11A07 /* Network */,
+				664FEC2C2554BF6700D11A07 /* Utils */,
+				664FEC2D2554BF7B00D11A07 /* Storyboards */,
+				66DFDFF2252F57C700C2BE6C /* Assets.xcassets */,
 				66DFDFF7252F57C700C2BE6C /* Info.plist */,
+				660AB876252F617B00BABC36 /* schema.json */,
 			);
 			path = RocketReserver;
 			sourceTree = "<group>";
@@ -141,12 +231,20 @@
 				66DFDFE0252F57C100C2BE6C /* Sources */,
 				66DFDFE1252F57C100C2BE6C /* Frameworks */,
 				66DFDFE2252F57C100C2BE6C /* Resources */,
+				66F17F802538E61200CA998C /* Lint Script */,
+				660AB87A252F63A200BABC36 /* Apollo CLI Run Script */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = RocketReserver;
+			packageProductDependencies = (
+				66DFE01A252F597500C2BE6C /* Apollo */,
+				66DFE01C252F597500C2BE6C /* ApolloWebSocket */,
+				6683883A252F6B64000D5FAC /* SDWebImage */,
+				66B420F125535DE300C10421 /* KeychainSwift */,
+			);
 			productName = RocketReserver;
 			productReference = 66DFDFE4252F57C100C2BE6C /* RocketReserver.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +317,11 @@
 				Base,
 			);
 			mainGroup = 66DFDFDB252F57C100C2BE6C;
+			packageReferences = (
+				66DFE019252F597500C2BE6C /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				66838839252F6B64000D5FAC /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				66B420F025535DE300C10421 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 66DFDFE5252F57C100C2BE6C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,8 +339,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				66DFDFF6252F57C700C2BE6C /* LaunchScreen.storyboard in Resources */,
+				66B420FA2553624C00C10421 /* BookTrip.graphql in Resources */,
+				66B420ED255358BC00C10421 /* LaunchDetails.graphql in Resources */,
+				66B420FC255362BE00C10421 /* CancelTrip.graphql in Resources */,
 				66DFDFF3252F57C700C2BE6C /* Assets.xcassets in Resources */,
 				66DFDFF1252F57C100C2BE6C /* Main.storyboard in Resources */,
+				66B420EA255353DE00C10421 /* Login.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +364,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		660AB87A252F63A200BABC36 /* Apollo CLI Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Apollo CLI Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${SRCROOT}\"/Codegen\n# If your package ever seems to have problems with caching, run:\n# swift package clean\nxcrun -sdk macosx swift run\n";
+		};
+		66F17F802538E61200CA998C /* Lint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Lint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		66DFDFE0252F57C100C2BE6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,8 +410,14 @@
 			files = (
 				66DFDFE8252F57C100C2BE6C /* AppDelegate.swift in Sources */,
 				66DFDFEA252F57C100C2BE6C /* SceneDelegate.swift in Sources */,
-				66DFDFEC252F57C100C2BE6C /* MasterViewController.swift in Sources */,
+				66B420EF25535D0600C10421 /* TokenAddingInterceptor.swift in Sources */,
+				66B420F8255361D400C10421 /* UIViewController+Alert.swift in Sources */,
+				66B420F62553616D00C10421 /* NetworkInterceptorProvider.swift in Sources */,
+				66838838252F651B000D5FAC /* Network.swift in Sources */,
+				66B420F425535E2200C10421 /* LoginViewController.swift in Sources */,
+				66DFDFEC252F57C100C2BE6C /* LaunchesViewController.swift in Sources */,
 				66DFDFEE252F57C100C2BE6C /* DetailViewController.swift in Sources */,
+				66838835252F6450000D5FAC /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +746,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		66838839252F6B64000D5FAC /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.2;
+			};
+		};
+		66B420F025535DE300C10421 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 19.0.0;
+			};
+		};
+		66DFE019252F597500C2BE6C /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.34.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6683883A252F6B64000D5FAC /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66838839252F6B64000D5FAC /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		66B420F125535DE300C10421 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66B420F025535DE300C10421 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		66DFE01A252F597500C2BE6C /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66DFE019252F597500C2BE6C /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		66DFE01C252F597500C2BE6C /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66DFE019252F597500C2BE6C /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 66DFDFDC252F57C100C2BE6C /* Project object */;
 }
